@@ -5,9 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AutoAI - Chatbots com IA</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      padding: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      z-index: 999;
+      transition: transform 0.3s;
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+      background-color: #1ebe57;
+    }
+  </style>
 </head>
 <body>
-  <nav class="navbar">
+  <nav class="navbar" data-aos="fade-down">
     <div class="nav-container">
       <span class="logo">AutoAI</span>
       <ul class="nav-links">
@@ -18,35 +40,31 @@
     </div>
   </nav>
 
-  <header>
+  <header data-aos="zoom-in">
     <h1>AutoAI</h1>
     <p>Automatize seu atendimento no WhatsApp com inteligência artificial</p>
   </header>
 
-  <section class="sobre" id="sobre">
+  <section class="sobre" id="sobre" data-aos="fade-up">
     <div class="ajuste-ancora">
       <h2>Sobre a AutoAI</h2>
       <p>
-        A AutoAI é uma empresa focada em transformar a forma como pequenos negócios se comunicam com seus clientes. 
-        Oferecemos soluções de chatbot inteligentes para WhatsApp, com atendimento automático, integração com IA e funcionalidades como agendamentos, suporte 24h e muito mais.
-      </p>
-      <p>
-        Com a AutoAI, você economiza tempo, melhora o atendimento e foca no que realmente importa: o crescimento do seu negócio. 
-        Seja você um pizzaiolo, uma clínica, loja ou profissional autônomo — estamos aqui para facilitar sua vida.
+        &ensp;&ensp;&ensp;A AutoAI cria chatbots inteligentes para WhatsApp, ajudando pequenos negócios a automatizar o atendimento, economizar tempo e melhorar a experiência do cliente.
+        Nossa solução funciona 24h por dia, com agendamentos, respostas rápidas e integração com IA — ideal para quem quer crescer sem perder tempo.
       </p>
       <div class="botoes-sobre">
         <a href="https://wa.me/SEUNUMERO?text=Olá! Quero assinar um plano da AutoAI." target="_blank" class="botao-whats">
           <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width="20" /> Fale conosco no WhatsApp
         </a>
-        <a href="#" class="botao-secundario">Ver exemplos de atendimento</a>
+        <a href="#planos" class="botao-secundario">Ver exemplos de atendimento</a>
       </div>
     </div>
   </section>
 
-  <section class="planos" id="planos">
+  <section class="planos" id="planos" data-aos="fade-up">
     <h2>Nossos Planos</h2>
     <div class="tabela">
-      <div class="plano">
+      <div class="plano selecionavel" data-aos="fade-right">
         <h3>Básico</h3>
         <p>R$ 59/mês</p>
         <ul>
@@ -55,7 +73,7 @@
           <li>1 número de WhatsApp</li>
         </ul>
       </div>
-      <div class="plano destaque">
+      <div class="plano selecionavel" data-aos="zoom-in">
         <h3>Pro</h3>
         <p>R$ 99/mês</p>
         <ul>
@@ -64,7 +82,7 @@
           <li>Integração com calendário</li>
         </ul>
       </div>
-      <div class="plano">
+      <div class="plano selecionavel" data-aos="fade-left">
         <h3>Premium</h3>
         <p>R$ 179/mês</p>
         <ul>
@@ -74,10 +92,43 @@
         </ul>
       </div>
     </div>
-  </section>
-
-  <footer>
+  </section>  
+  <footer data-aos="fade-up">
     <p>© 2025 AutoAI - Todos os direitos reservados</p>
   </footer>
+  <a class="whatsapp-float" href="https://wa.me/SEUNUMERO" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" width="30" alt="WhatsApp" />
+  </a>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+ <script>
+  const planos = document.querySelectorAll('.plano.selecionavel');
+
+  function limparSelecao() {
+    planos.forEach(p => {
+      p.classList.remove('selecionado');
+      p.classList.remove('diminuido');
+    });
+  }
+
+  planos.forEach(plano => {
+    plano.addEventListener('click', (e) => {
+      e.stopPropagation(); // Evita fechar seleção ao clicar no próprio plano
+      limparSelecao();
+      plano.classList.add('selecionado');
+      planos.forEach(p => {
+        if (p !== plano) {
+          p.classList.add('diminuido');
+        }
+      });
+    });
+  });
+
+  document.addEventListener('click', () => {
+    limparSelecao();
+  });
+</script>
 </body>
 </html>
