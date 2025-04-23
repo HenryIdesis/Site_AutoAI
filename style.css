@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f2faff;
+    color: #0a1f44;
+    text-align: center;
+    padding-top: 70px; /* espaço pro menu fixo */
+  }
+  
+  /* NAVBAR */
+  .navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  }
+  
+  
+  .nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #0a1f44;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #0a1f44;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    color: #007bff;
+  }
+  
+  /* HEADER */
+  header {
+    padding: 3rem 1rem;
+    background-color: #d1ecff;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* SOBRE */
+  .sobre {
+    padding: 3rem 1rem;
+    background-color: #ffffff;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #0a1f44;
+  }
+  
+  .botoes-sobre {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .botao-whats {
+    background-color: #25d366;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background-color 0.3s;
+  }
+  
+  .botao-whats:hover {
+    background-color: #1ebe57;
+  }
+  
+  .botao-secundario {
+    background-color: transparent;
+    color: #007bff;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid #007bff;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .botao-secundario:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  /* PLANOS */
+  .planos {
+    padding: 3rem 1rem;
+  }
+  
+  .tabela {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .plano {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    width: 280px;
+  }
+  
+  .plano h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .plano p {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .plano ul {
+    list-style: none;
+    font-size: 0.95rem;
+    text-align: left;
+  }
+  
+  .destaque {
+    border: 2px solid #007bff;
+  }
+  
+  /* FOOTER */
+  footer {
+    background-color: #d1ecff;
+    padding: 1rem;
+    font-size: 0.85rem;
+    color: #0a1f44;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  .ajuste-ancora {
+    scroll-margin-top: 100px; /* altura do menu */
+  }
+  
+  
