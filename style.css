@@ -59,7 +59,6 @@ body {
 }
 
 /* HEADER */
-/* Gradiente animado no header */
 header {
   padding: 3rem 1rem;
   background: linear-gradient(270deg, #d1ecff, #e3f3ff, #d1ecff);
@@ -67,6 +66,7 @@ header {
   animation: gradientShift 10s ease infinite;
   border-radius: 0 0 20px 20px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  background: linear-gradient(120deg, #eef2ff, #fff1e6);
 }
 
 @keyframes gradientShift {
@@ -82,26 +82,38 @@ header {
 }
 
 header h1 {
-  font-size: 2.7rem;
-  margin-bottom: 0.5rem;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #101828;
 }
 
 header p {
-  font-size: 1.2rem;
-  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  color: #475467;
+  max-width: 700px;
+  margin: 0 auto;
 }
+
 
 /* SOBRE */
 .sobre {
   padding: 3rem 1rem;
   background-color: #ffffff;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 3rem auto 0;
   font-size: 1.05rem;
   line-height: 1.6;
   color: #0a1f44;
   border-radius: 16px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  scroll-margin-top: 140px;
+}
+
+.sobre h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #0a1f44;
 }
 
 .botoes-sobre {
@@ -128,10 +140,6 @@ header p {
 .botao-whats:hover {
   background-color: #1ebe57;
   transform: translateY(-2px);
-}
-
-.botao-whats:hover,
-.botao-secundario:hover {
   box-shadow: 0 8px 24px rgba(0, 123, 255, 0.3);
 }
 
@@ -150,62 +158,63 @@ header p {
   background-color: #007bff;
   color: white;
   transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 123, 255, 0.3);
 }
 
 /* PLANOS */
 .planos {
-  padding: 3rem 1rem;
+  padding: 1.5rem 1rem 3rem 1rem; /* Reduz só o padding-top */
   background-color: #f8fbff;
 }
 
-.tabela {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-  margin-top: 2rem;
+.planos h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 5.5rem; /* espaço maior abaixo do título */
+  color: #0a1f44;
+  letter-spacing: -0.5px;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  scroll-margin-top: 140px;
 }
 
-/* PLANO PADRÃO */
+  .tabela {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 15rem; /* ↑ aqui é o segredo: afasta os cards do título */
+  }  
+
+/* PLANO */
 .plano {
   background-color: white;
   border-radius: 1rem;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
-  padding: 2rem;
-  width: 280px;
+  padding: 2.5rem;
+  width: 320px;
   transition: transform 0.3s, box-shadow 0.3s, border 0.3s, opacity 0.3s;
-  border: 2px solid transparent;
+  border: 1px solid #c6bfbf;
   cursor: pointer;
 }
 
-/* Quando o mouse está em cima da .tabela (container dos planos) */
 .tabela:hover .plano {
-  transform: scale(0.95);      /* ↓ Todos encolhem um pouco */
+  transform: scale(0.95);
   opacity: 0.85;
 }
 
-/* Mas o que está com o mouse em cima cresce */
-.tabela:hover .plano:hover {
-  transform: scale(1.15);      /* ↑ O que está em hover cresce */
-  border: 2px solid #000;      /* Borda preta no hover */
+.plano:hover {
+  transform: scale(1.05);
   opacity: 1;
-  z-index: 1;
+  border: 2px solid #000;
+  z-index: 2;
 }
 
-.plano:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-  border: 2px solid #007bff;
-}
-
-.plano.selecionado {
-  border: 2px solid #000000;
-}
-
-.plano:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-  border: 2px solid #000000; /* ← nova borda azul no hover */
+.tabela:hover .plano:hover {
+  transform: scale(1.18);
+  border: 3px solid #000;
+  opacity: 1;
+  z-index: 2;
 }
 
 .plano h3 {
@@ -225,32 +234,37 @@ header p {
   text-align: left;
   padding-left: 0;
 }
-/* Destacar plano selecionado */
+
+/* Seleção de planos */
 .plano.selecionado {
   transform: scale(1.25);
   border: 2px solid #000000;
   z-index: 1;
 }
 
-/* Diminuir planos não selecionados quando algum estiver selecionado */
 .plano.diminuido {
   transform: scale(0.95);
   opacity: 0.8;
 }
 
-.destaque {
-  border: 2px solid #0c0c0c;
+.planos-subtitulo {
+  font-size: 1.4rem;
+  color: #000000;
+  margin-top: -4rem;
+  margin-bottom: 2rem;
+  opacity: 0.8;
 }
 
 /* FOOTER */
 footer {
   background-color: #d1ecff;
-  padding: 1rem;
+  padding: 1.5rem 1rem;
   font-size: 0.85rem;
   color: #0a1f44;
   position: relative;
   bottom: 0;
   width: 100%;
+  margin-top: 3rem;
 }
 
 .ajuste-ancora {
@@ -277,4 +291,24 @@ footer {
 .whatsapp-float:hover {
   background-color: #1ebe57;
   transform: scale(1.05);
+}
+
+.tag-popular {
+  display: inline-block;
+  background-color: #f8d347;
+  color: #000;
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.separador {
+  height: 40px;
+  background: linear-gradient(to right, #f2faff, #ffffff);
+  border-top: 1px solid #e0e0e0;
+  margin: 3rem 0;
 }
