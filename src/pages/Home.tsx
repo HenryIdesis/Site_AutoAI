@@ -10,43 +10,46 @@ const Home: React.FC = () => {
   // Dados dos planos
   const plans = [
     {
-      title: 'Básico',
-      price: '59',
+      title: 'Experimental',
+      price: 'Gratuito',
       features: [
-        'Chatbot personalizado',
-        'Atendimento 24/7',
-        'Respostas automáticas',
-        'Integração com WhatsApp',
-        'Até 500 conversas/mês',
-        'Suporte por e-mail'
+        'Teste como a IA funciona apenas nesse site',
+        'Informe os dados do seu negócio e veja a IA em ação',
+        'Chatbot simulado sem integração com WhatsApp',
+        'Conversas ilimitadas dentro do site para demonstração'
       ],
       isPopular: false
     },
     {
-      title: 'Pro',
-      price: '99',
+      title: 'Básico',
+      price: 'R$ 69,90',
+      features: [
+        'IA treinada com informações do seu negócio',
+        'Atendimento via WhatsApp',
+        'Multicliente (atende vários clientes ao mesmo tempo)',
+        'Sem banco de dados (sem histórico de conversas)',
+        'Sem integração com agenda',
+        'Respostas em tempo real',
+        'Estatísticas básicas (em breve)',
+        'Suporte por e-mail',
+        'Descontos: 10% trimestral, 20% semestral'
+      ],
+      isPopular: false
+    },
+    {
+      title: 'PRO',
+      price: 'R$ 99,90',
       features: [
         'Tudo do plano Básico',
-        'Até 2.000 conversas/mês',
-        'Integração com site e redes sociais',
-        'Personalização avançada',
-        'Relatórios mensais',
-        'Suporte prioritário'
+        'Histórico de conversas personalizado',
+        'Integração com agenda (agenda automatica)',
+        'Suporte a múltiplos atendentes',
+        'Estatísticas avançadas',
+        'Pagamento automatico com PIX (Em breve)',
+        'Suporte prioritário por e-mail e WhatsApp',
+        'Descontos: 10% trimestral, 20% semestral'
       ],
       isPopular: true
-    },
-    {
-      title: 'Premium',
-      price: '179',
-      features: [
-        'Tudo do plano Pro',
-        'Conversas ilimitadas',
-        'IA treinada para seu negócio',
-        'Integração com CRM',
-        'Relatórios semanais detalhados',
-        'Suporte VIP 24/7'
-      ],
-      isPopular: false
     }
   ];
 
