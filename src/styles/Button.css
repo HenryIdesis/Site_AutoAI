@@ -1,0 +1,71 @@
+.button {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: none;
+  outline: none;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.button:active {
+  transform: translateY(0);
+}
+
+/* Button Types */
+.primary {
+  background: linear-gradient(90deg, #4361ee 0%, #3a56d4 100%);
+  color: white;
+}
+
+.primary:hover {
+  background: linear-gradient(90deg, #3a56d4 0%, #2a46c4 100%);
+}
+
+.secondary {
+  background: linear-gradient(90deg, #f72585 0%, #e5267b 100%);
+  color: white;
+}
+
+.secondary:hover {
+  background: linear-gradient(90deg, #e5267b 0%, #d5166b 100%);
+}
+
+.outline {
+  background: transparent;
+  border: 2px solid #4361ee;
+  color: #4361ee;
+}
+
+.outline:hover {
+  background: rgba(67, 97, 238, 0.05);
+}
+
+/* Button Sizes */
+.small {
+  padding: 8px 16px;
+  font-size: 0.875rem;
+}
+
+.medium {
+  padding: 12px 24px;
+  font-size: 1rem;
+}
+
+.large {
+  padding: 16px 32px;
+  font-size: 1.125rem;
+}
+
+.full-width {
+  width: 100%;
+}

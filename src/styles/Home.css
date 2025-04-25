@@ -1,0 +1,95 @@
+.home-page {
+  overflow-x: hidden;
+}
+
+/* Pricing Section Styles */
+.pricing-section {
+  padding: 6rem 0;
+  background-color: white;
+}
+
+.pricing-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.pricing-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+/* CTA Section Styles */
+.cta-section {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, #4361ee 0%, #3a56d4 100%);
+  color: white;
+  text-align: center;
+}
+
+.cta-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.cta-section p {
+  font-size: 1.25rem;
+  margin-bottom: 2.5rem;
+  opacity: 0.9;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.cta-buttons .button.outline {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.cta-buttons .button.outline:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (max-width: 960px) {
+  .pricing-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .cta-section h2 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .pricing-section,
+  .cta-section {
+    padding: 4rem 0;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

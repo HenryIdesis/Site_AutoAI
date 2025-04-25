@@ -1,0 +1,317 @@
+.plans-page {
+  overflow-x: hidden;
+}
+
+/* Plans Hero Section */
+.plans-hero {
+  background: linear-gradient(135deg, #4361ee 0%, #3a56d4 100%);
+  color: white;
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.plans-hero-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.plans-hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.plans-hero p {
+  font-size: 1.5rem;
+  opacity: 0.9;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Plans Container */
+.plans-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Plans Pricing Section */
+.plans-pricing {
+  padding: 6rem 0;
+  background-color: white;
+}
+
+.plans-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.plans-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.plans-header h2:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #4361ee 0%, #f72585 100%);
+  border-radius: 3px;
+}
+
+.plans-header p {
+  font-size: 1.25rem;
+  color: #666;
+  max-width: 700px;
+  margin: 2rem auto 0;
+  line-height: 1.6;
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.plans-note {
+  margin-top: 3rem;
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.plans-note p {
+  color: #666;
+  font-size: 1rem;
+}
+
+.plans-note i {
+  color: #4361ee;
+  margin-right: 0.5rem;
+}
+
+/* Plans Comparison Section */
+.plans-comparison {
+  padding: 6rem 0;
+  background-color: #f8f9fa;
+}
+
+.plans-comparison h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 3rem;
+  text-align: center;
+  position: relative;
+}
+
+.plans-comparison h2:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #4361ee 0%, #f72585 100%);
+  border-radius: 3px;
+}
+
+.comparison-table-wrapper {
+  overflow-x: auto;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 1.25rem 1.5rem;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.comparison-table th {
+  background-color: #4361ee;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.comparison-table th:first-child {
+  text-align: left;
+}
+
+.comparison-table td:first-child {
+  text-align: left;
+  font-weight: 500;
+  color: #333;
+}
+
+.comparison-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.comparison-table tr:hover {
+  background-color: #f1f3f9;
+}
+
+.comparison-table .fa-check {
+  color: #4361ee;
+}
+
+.comparison-table .fa-times {
+  color: #ccc;
+}
+
+.table-actions td {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* FAQ Section */
+.plans-faq {
+  padding: 6rem 0;
+  background-color: white;
+}
+
+.plans-faq h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 3rem;
+  text-align: center;
+  position: relative;
+}
+
+.plans-faq h2:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #4361ee 0%, #f72585 100%);
+  border-radius: 3px;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+}
+
+.faq-item {
+  background: white;
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f0f0f0;
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.faq-item p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* CTA Section */
+.plans-cta {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, #f72585 0%, #e5267b 100%);
+  color: white;
+  text-align: center;
+}
+
+.plans-cta h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.plans-cta p {
+  font-size: 1.25rem;
+  margin-bottom: 2.5rem;
+  opacity: 0.9;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.plans-cta-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 960px) {
+  .plans-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .plans-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .plans-hero p {
+    font-size: 1.25rem;
+  }
+  
+  .plans-header h2,
+  .plans-comparison h2,
+  .plans-faq h2,
+  .plans-cta h2 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .plans-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .plans-hero,
+  .plans-pricing,
+  .plans-comparison,
+  .plans-faq,
+  .plans-cta {
+    padding: 4rem 0;
+  }
+  
+  .comparison-table th,
+  .comparison-table td {
+    padding: 1rem;
+  }
+}

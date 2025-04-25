@@ -1,0 +1,7 @@
+# Ignorar node_modules e arquivos de build
+node_modules/
+dist
+.vite
+.env
+*.log
+*.DS_Store
