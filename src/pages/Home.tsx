@@ -57,7 +57,7 @@ const Home: React.FC = () => {
     <div className="home-page">
       <Hero 
         title="Automatize seu atendimento com Inteligência Artificial"
-        subtitle="A SecretarIA é a solução perfeita para pequenos negócios e profissionais autônomos que desejam oferecer atendimento de qualidade 24 horas por dia, 7 dias por semana."
+        subtitle="A FluxIA é a solução perfeita para pequenos negócios e profissionais autônomos que desejam oferecer atendimento de qualidade 24 horas por dia, 7 dias por semana."
         ctaText="Conheça nossos planos"
       />
       

@@ -57,7 +57,7 @@ const FeatureSection: React.FC = () => {
     <section className="feature-section">
       <div className="feature-container">
         <div className="feature-header">
-          <h2 className="section-title">Por que escolher a SecretarIA?</h2>
+          <h2 className="section-title">Por que escolher a FluxIA?</h2>
           <p className="section-subtitle">
             Transforme o atendimento do seu negócio com nossa solução de chatbot inteligente
           </p>

@@ -28,21 +28,30 @@ const Contact: React.FC = () => {
                 </div>
                 <div className="contact-details">
                   <h3>E-mail</h3>
-                  <p>contato@secretaria.com.br</p>
-                  <p>suporte@secretaria.com.br</p>
+                  {/* <p>contato@secretaria.com.br</p>
+                  <p>suporte@secretaria.com.br</p> */}
                 </div>
               </div>
               
               <div className="contact-method">
                 <div className="contact-icon">
-                  <i className="fas fa-phone-alt"></i>
+                  <i className="fab fa-whatsapp"></i>
                 </div>
                 <div className="contact-details">
-                  <h3>Telefone</h3>
-                  <p>(11) 99999-9999</p>
-                  <p>(11) 3333-3333</p>
+                  <h3>WhatsApp</h3>
+                  <p>
+                    <a
+                      href="https://wa.me/5511939312409"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ color: '#25D366', fontWeight: 'bold', textDecoration: 'none' }}
+                    >
+                      Fale conosco pelo WhatsApp
+                    </a>
+                  </p>
                 </div>
               </div>
+
               
               <div className="contact-method">
                 <div className="contact-icon">

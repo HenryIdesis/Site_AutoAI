@@ -31,19 +31,19 @@ const Testimonial: React.FC<TestimonialProps> = ({ quote, author, position, comp
 const TestimonialSection: React.FC = () => {
   const testimonials = [
     {
-      quote: "A SecretarIA transformou o atendimento da minha clínica. Meus pacientes adoram a rapidez nas respostas e eu economizo tempo valioso com agendamentos automáticos.",
+      quote: "A FluxIA transformou o atendimento da minha clínica. Meus pacientes adoram a rapidez nas respostas e eu economizo tempo valioso com agendamentos automáticos.",
       author: "Dra. Ana Silva",
       position: "Dentista",
       company: "Clínica Odontológica Sorrisos"
     },
     {
-      quote: "Desde que implementei o chatbot da SecretarIA, as vendas online da minha pizzaria aumentaram em 35%. O atendimento automático 24 horas fez toda a diferença!",
+      quote: "Desde que implementei o chatbot da FluxIA, as vendas online da minha pizzaria aumentaram em 35%. O atendimento automático 24 horas fez toda a diferença!",
       author: "Carlos Oliveira",
       position: "Proprietário",
       company: "Pizzaria Bella Napoli"
     },
     {
-      quote: "Como nutricionista autônoma, não tinha como responder todas as mensagens. Com a SecretarIA, consigo focar nos atendimentos enquanto o chatbot cuida das dúvidas iniciais e agendamentos.",
+      quote: "Como nutricionista autônoma, não tinha como responder todas as mensagens. Com a FluxIA, consigo focar nos atendimentos enquanto o chatbot cuida das dúvidas iniciais e agendamentos.",
       author: "Juliana Costa",
       position: "Nutricionista",
       company: "Nutri Vida Saudável"
@@ -56,7 +56,7 @@ const TestimonialSection: React.FC = () => {
         <div className="testimonial-header">
           <h2 className="section-title">O que nossos clientes dizem</h2>
           <p className="section-subtitle">
-            Veja como a SecretarIA está transformando negócios por todo o Brasil
+            Veja como a FluxIA está transformando negócios por todo o Brasil
           </p>
         </div>
         <div className="testimonial-grid">

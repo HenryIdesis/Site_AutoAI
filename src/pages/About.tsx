@@ -7,7 +7,7 @@ const About: React.FC = () => {
     <div className="about-page">
       <section className="about-hero">
         <div className="about-hero-container">
-          <h1>Sobre a SecretarIA</h1>
+          <h1>Sobre a FluxIA</h1>
           <p>Transformando o atendimento de pequenos negócios com inteligência artificial</p>
         </div>
       </section>
@@ -17,7 +17,7 @@ const About: React.FC = () => {
           <div className="about-content">
             <h2>Nossa História</h2>
             <p>
-              A SecretarIA nasceu da percepção de que pequenos negócios e profissionais autônomos enfrentam grandes desafios 
+              A FluxIA nasceu da percepção de que pequenos negócios e profissionais autônomos enfrentam grandes desafios 
               para oferecer um atendimento de qualidade e consistente aos seus clientes.
             </p>
             <p>
@@ -27,7 +27,7 @@ const About: React.FC = () => {
             </p>
             <p>
               Acreditamos que a automação inteligente do atendimento não é apenas um privilégio das grandes empresas. 
-              Com a SecretarIA, dentistas, nutricionistas, pizzarias e diversos outros pequenos negócios podem oferecer 
+              Com a FluxIA, dentistas, nutricionistas, pizzarias e diversos outros pequenos negócios podem oferecer 
               um atendimento excepcional 24 horas por dia, 7 dias por semana.
             </p>
           </div>
@@ -138,7 +138,7 @@ const About: React.FC = () => {
         <div className="about-container">
           <h2>Junte-se a centenas de negócios que já transformaram seu atendimento</h2>
           <p>
-            Descubra como a SecretarIA pode ajudar seu negócio a oferecer um atendimento excepcional, 
+            Descubra como a FluxIA pode ajudar seu negócio a oferecer um atendimento excepcional, 
             aumentar suas conversões e liberar seu tempo para o que realmente importa.
           </p>
           <div className="about-cta-buttons">

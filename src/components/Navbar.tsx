@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
-          <span className="logo-text">Secretar</span>
+          <span className="logo-text">Flux</span>
           <span className="logo-highlight">IA</span>
         </Link>
 
