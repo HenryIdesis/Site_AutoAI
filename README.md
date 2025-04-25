@@ -38,9 +38,9 @@ secretaria/
 ## Planos de Preço
 
 O site apresenta três planos de preço:
-- **Básico**: R$59/mês
-- **Pro**: R$99/mês
-- **Premium**: R$179/mês
+- **Experimental**: Grátis
+- **Basico**: R$69,90/mês
+- **Pro**: R$99,90/mês
 
 ## Instalação e Execução
 

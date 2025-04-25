@@ -170,16 +170,10 @@ const Plans: React.FC = () => {
             <td>Prioritário</td>
           </tr>
           <tr>
-            <td>Descontos</td>
-            <td><i className="fas fa-times"></i></td>
-            <td>10% trimestral, 20% semestral</td>
-            <td>10% trimestral, 20% semestral</td>
-          </tr>
-          <tr>
             <td>Preço mensal</td>
             <td>Gratuito</td>
             <td>R$ 69,90</td>
-            <td><strong>R$ 99,90</strong> ⭐</td>
+            <td><strong>R$ 99,90</strong></td>
           </tr>
           <tr className="table-actions">
             <td></td>

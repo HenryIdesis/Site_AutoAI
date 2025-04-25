@@ -90,7 +90,7 @@ const Home: React.FC = () => {
       <section className="cta-section">
         <div className="cta-container">
           <h2>Pronto para transformar o atendimento do seu negócio?</h2>
-          <p>Comece agora mesmo com nosso plano básico por apenas R$59/mês.</p>
+          <p>Comece agora mesmo com nosso plano Pro por apenas R$99,90/mês.</p>
           <div className="cta-buttons">
             <Button type="secondary" size="large">
               Começar agora

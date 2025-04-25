@@ -25,10 +25,12 @@ const PriceCard: React.FC<PriceCardProps> = ({
       <div className="price-card-header">
         <h3 className="price-card-title">{title}</h3>
         <div className="price-card-price">
-          <span className="currency">R$</span>
-          <span className="amount">{price}</span>
-          <span className="period">/mês</span>
-        </div>
+  <span className="currency">R$</span>
+  <span className="amount">{price}</span>
+  {price !== 'Gratuito' && (
+    <span className="period">/mês</span>
+  )}
+</div>
       </div>
       <div className="price-card-features">
         <ul>
